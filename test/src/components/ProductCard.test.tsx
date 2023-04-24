@@ -40,8 +40,11 @@ describe('ProductCard', () => {
           </>
         )}
       </ProductCard>
-    );
+    ); /* 
+    En React, "act" es una función que se utiliza para asegurarse de que las actualizaciones del componente se han completado antes de realizar una aserción (una afirmación de que algo es verdadero).
 
+    La función "act" se utiliza principalmente en las pruebas unitarias de React para simular el ciclo de vida de un componente y garantizar que el estado y las propiedades del componente se han actualizado correctamente antes de realizar pruebas sobre ellos. 
+    */
     act(() => {
       wrapper.root.findByType('button').props.onClick(); //* simulamos el click
     });
