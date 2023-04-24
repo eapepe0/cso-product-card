@@ -17,7 +17,6 @@ import {
 
 ```javascript
 <ProductCard
-  key={product.id}
   product={product}
   initialValues={{
     count: 4,
